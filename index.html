@@ -343,6 +343,7 @@
     </a>
     <ul class="nav-links">
       <li><a href="#features">Features</a></li>
+      <li><a href="courses.html">Courses</a></li>
       <li><a href="#erp">ERP</a></li>
       <li><a href="#portal">Student Portal</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -742,6 +743,21 @@
   document.querySelectorAll('.dtab').forEach(t=>{
     t.addEventListener('click',()=>{document.querySelectorAll('.dtab').forEach(x=>x.classList.remove('on'));t.classList.add('on')})
   })
+</script>
+
+<!-- redirecting the courses -->
+
+<script>
+window.addEventListener("load", function () {
+  if (window.location.hash) {
+    const el = document.querySelector(window.location.hash);
+    if (el) {
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }
+});
 </script>
 </body>
 </html>
